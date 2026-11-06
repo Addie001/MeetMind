@@ -1,0 +1,50 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+*.pem
+*.key
+
+# Python environments, caches and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local meeting databases, backups and logs
+/data/
+*.sqlite3*
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Private evaluation inputs and generated runs; keep aggregate reports
+/evaluation/data/
+/evaluation/runs/*
+!/evaluation/runs/single-agent-v1/
+!/evaluation/runs/dual-agent-v2/
+/evaluation/runs/single-agent-v1/*
+!/evaluation/runs/single-agent-v1/REPORT.md
+!/evaluation/runs/single-agent-v1/DEV-FINDINGS.md
+/evaluation/runs/dual-agent-v2/*
+!/evaluation/runs/dual-agent-v2/COMPARISON.md
+!/evaluation/runs/dual-agent-v2/HELDOUT.md
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
